@@ -1,0 +1,18 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venda sua Alma</title>
+    <link rel="stylesheet" href="{% static 'background.css' %}">
+  </head>
+  <body>
+      <div class="body">
+          <img src="{% static 'ALMA3.jpg' %}" usemap="#signup"/>
+          <map name="signup">
+              <area shape="poly" coords="169,464,169,488,346,485,346,458" class="socialaccount_provider google" href="/accounts/google/login/?process=login"/>
+          </map>
+  </body>
+</html>
+
