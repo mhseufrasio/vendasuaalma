@@ -19,7 +19,6 @@ from django.urls import path, include
 from login.views import Inicio
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', Inicio.as_view(), name='index'),
 ]
