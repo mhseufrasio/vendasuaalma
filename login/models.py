@@ -7,9 +7,8 @@ class Base(models.Model):
     atualizacao = models.DateTimeField(auto_now=True)
     ativo = models.BooleanField(default=True)
 
-
-class Meta:
-    abstract = True
+    class Meta:
+        abstract = True
 
 
 class Curso(Base):
