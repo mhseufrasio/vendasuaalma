@@ -60,11 +60,14 @@ MIDDLEWARE = [
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
-        'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
-        }
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
     }
 }
 
